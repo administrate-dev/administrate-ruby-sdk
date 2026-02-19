@@ -1,0 +1,46 @@
+AllCops:
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 35
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/BlockLength:
+  Exclude:
+    - "test/**/*"
+    - "*.gemspec"
+
+Metrics/ParameterLists:
+  Max: 10
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - "test/**/*"
+
+Naming/FileName:
+  Exclude:
+    - "lib/administrate-sdk.rb"
+
+Naming/VariableNumber:
+  Exclude:
+    - "test/**/*"
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/PerceivedComplexity:
+  Max: 13
